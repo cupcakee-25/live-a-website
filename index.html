@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉLORA | Beauty & Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">ÉLORA.</h2>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Collection</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="small-heading">BEAUTY • ELEGANCE • CONFIDENCE</p>
+            <h1>Elegance is<br>always in style.</h1>
+            <p>
+                Discover your beauty with our timeless
+                collection designed just for you.
+            </p>
+            <a href="#products" class="btn">Explore Collection</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=900"
+                 alt="Elegant fashion model">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <p class="small-heading">OUR STORY</p>
+        <h2>Beauty in every detail.</h2>
+        <p>
+            We believe that true elegance comes from simplicity.
+            Our collection is created for people who love
+            timeless beauty, confidence and sophistication.
+        </p>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <p class="small-heading">OUR COLLECTION</p>
+        <h2>Discover Our Favorites</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=600"
+                     alt="Perfume">
+                <h3>Luxury Perfume</h3>
+                <p>Rs. 3,500</p>
+                <button onclick="addToCart('Luxury Perfume')">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600"
+                     alt="Watch">
+                <h3>Classic Watch</h3>
+                <p>Rs. 5,000</p>
+                <button onclick="addToCart('Classic Watch')">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600"
+                     alt="Jewellery">
+                <h3>Golden Jewellery</h3>
+                <p>Rs. 2,800</p>
+                <button onclick="addToCart('Golden Jewellery')">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <p class="small-heading">GET IN TOUCH</p>
+        <h2>Let's Stay Connected.</h2>
+        <p>Have questions? We'd love to hear from you.</p>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>ÉLORA.</h2>
+        <p>© 2026 ÉLORA. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
